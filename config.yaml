@@ -1,8 +1,20 @@
 name: "nodecast-tv"
 description: "nodecast-tv home assistant application"
 version: "2.1.1"
-slug: "nodecast_tv"
+slug: "nodecast-tv"
+startup: application
+boot: auto
 init: false
+panel_icon: "mdi:television-classic"
+panel_title: nodecast-tv
+url: "https://github.com/lkadar2015/nodecast-tv-lkadar2015"
+webui: "http://[HOST]:[PORT:3000]/"
+watchdog: "http://[HOST]:[PORT:3000]/"
+ingress: true
+ingress_port: 3000
+ingress_entry: /
+panel_admin: false
+full_access: true
 arch:
   - amd64
 ports:
