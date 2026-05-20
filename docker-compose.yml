@@ -7,6 +7,11 @@ services:
       - "3000:3000"
     volumes:
       - ./data:/app/data
+    devices:
+      - /dev/dri:/dev/dri # Required for VAAPI/QuickSync/AMF (Linux)
+    group_add:       # Optional: Needed mainly if you run as non-root
+      - "video"      # Run on host: getent group video
+      - "render"     # Run on host: getent group render
     restart: unless-stopped
     environment:
       - NODE_ENV=production
