@@ -1,0 +1,10 @@
+name: "nodecast-tv"
+description: "nodecast-tv home assistant application"
+version: "2.1.1"
+slug: "nodecast_tv"
+init: false
+arch:
+  - amd64
+ports:
+  3000/tcp: 3000
+  3000/udp: 3000
