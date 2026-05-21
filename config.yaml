@@ -1,6 +1,6 @@
 name: "nodecast-tv"
 description: "nodecast-tv home assistant application"
-version: "2.1.1.005"
+version: "2.1.1.006"
 slug: "nodecast-tv"
 startup: application
 boot: auto
@@ -8,7 +8,7 @@ init: false
 panel_icon: "mdi:television-classic"
 panel_title: nodecast-tv
 url: "https://github.com/lkadar2015/nodecast-tv-lkadar2015"
-image: ghcr.io/lkadar2015/nodecast-tv
+image: ghcr.io/lkadar2015/nodecast-tv:latest
 webui: "http://[HOST]:[PORT:3000]/"
 watchdog: "http://[HOST]:[PORT:3000]/"
 ingress: true
