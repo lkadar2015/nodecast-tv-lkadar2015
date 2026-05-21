@@ -217,6 +217,7 @@ router.get('/', async (req, res) => {
         '-f', 'mp4',
         '-movflags', 'frag_keyframe+empty_moov+default_base_moof+faststart',
         '-flush_packets', '1', // Send data immediately
+        '-bsf:a', 'aac_adtstoasc', //Broken AAC correction
         '-' // Output to stdout
     ];
 
