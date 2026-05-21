@@ -1,6 +1,6 @@
 services:
   nodecast-tv:
-    image: ghcr.io/lkadar2015/nodecast-tv-lkadar2015:latest
+    image: ghcr.io/lkadar2015/nodecast-tv:latest
     build: https://github.com/lkadar2015/nodecast-tv-lkadar2015.git#main
     container_name: nodecast-tv
     ports:
