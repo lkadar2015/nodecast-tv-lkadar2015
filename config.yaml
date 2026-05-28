@@ -1,6 +1,6 @@
 name: "nodecast-tv"
 description: "nodecast-tv home assistant application"
-version: "2.1.1.006"
+version: "2.1.1.007"
 slug: "nodecast-tv"
 startup: application
 boot: auto
